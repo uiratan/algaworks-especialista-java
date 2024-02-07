@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/02-Fundamentos/des0203_correcao_erros" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/02-Fundamentos/des0209_ticketmedio" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/02-Fundamentos/des0216_peso_cargas" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/02-Fundamentos/des0218_idade_media" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/02-Fundamentos/temp" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

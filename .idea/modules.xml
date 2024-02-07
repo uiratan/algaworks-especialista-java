@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/PrimeiroProjeto/PrimeiroProjeto.iml" filepath="$PROJECT_DIR$/PrimeiroProjeto/PrimeiroProjeto.iml" />
+      <module fileurl="file://$PROJECT_DIR$/arrays_08/arrays_08.iml" filepath="$PROJECT_DIR$/arrays_08/arrays_08.iml" />
+      <module fileurl="file://$PROJECT_DIR$/clean-code-06/clean-code-06.iml" filepath="$PROJECT_DIR$/clean-code-06/clean-code-06.iml" />
+      <module fileurl="file://$PROJECT_DIR$/encapsulamento_11/desafio_javabeans_11-5/copias_defensivas_11-09/copias_defensivas_11-09.iml" filepath="$PROJECT_DIR$/encapsulamento_11/desafio_javabeans_11-5/copias_defensivas_11-09/copias_defensivas_11-09.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fundamentos-02/des0203_correcao_erros/des0203_correcao_erros.iml" filepath="$PROJECT_DIR$/fundamentos-02/des0203_correcao_erros/des0203_correcao_erros.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fundamentos-02/des0209_ticketmedio/des0209_ticketmedio.iml" filepath="$PROJECT_DIR$/fundamentos-02/des0209_ticketmedio/des0209_ticketmedio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fundamentos-02/des0216_peso_cargas/des0216_peso_cargas.iml" filepath="$PROJECT_DIR$/fundamentos-02/des0216_peso_cargas/des0216_peso_cargas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fundamentos-02/des0218_idade_media/des0218_idade_media.iml" filepath="$PROJECT_DIR$/fundamentos-02/des0218_idade_media/des0218_idade_media.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oo-05/des0507_clinica_vet/des0507_clinica_vet.iml" filepath="$PROJECT_DIR$/oo-05/des0507_clinica_vet/des0507_clinica_vet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oo-05/des0525_fp/des0525_fp.iml" filepath="$PROJECT_DIR$/oo-05/des0525_fp/des0525_fp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oo-05/des0535_biblioteca/des0535_biblioteca.iml" filepath="$PROJECT_DIR$/oo-05/des0535_biblioteca/des0535_biblioteca.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oo-05/des0541_numero_util/des0541_numero_util.iml" filepath="$PROJECT_DIR$/oo-05/des0541_numero_util/des0541_numero_util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/heranca_12/desafio_12_15_rh/desafio_12_15_rh.iml" filepath="$PROJECT_DIR$/heranca_12/desafio_12_15_rh/desafio_12_15_rh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/polimorfismo_13/desafio_13_11_impostos/desafio_13_11_impostos.iml" filepath="$PROJECT_DIR$/polimorfismo_13/desafio_13_11_impostos/desafio_13_11_impostos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/encapsulamento_11/desafio_javabeans_11-5/desafio_javabeans_11-5.iml" filepath="$PROJECT_DIR$/encapsulamento_11/desafio_javabeans_11-5/desafio_javabeans_11-5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ej.iml" filepath="$PROJECT_DIR$/ej.iml" />
+      <module fileurl="file://$PROJECT_DIR$/encapsulamento_11/encapsulamento_11.iml" filepath="$PROJECT_DIR$/encapsulamento_11/encapsulamento_11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/estruturas-controle-operadores-03/estruturas-controle-operadores-03.iml" filepath="$PROJECT_DIR$/estruturas-controle-operadores-03/estruturas-controle-operadores-03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/interfaces_14/financeira/financeira.iml" filepath="$PROJECT_DIR$/interfaces_14/financeira/financeira.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fundamentos-02/fundamentos-02.iml" filepath="$PROJECT_DIR$/fundamentos-02/fundamentos-02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/heranca_12/heranca_12.iml" filepath="$PROJECT_DIR$/heranca_12/heranca_12.iml" />
+      <module fileurl="file://$PROJECT_DIR$/interfaces_14/interfaces_14.iml" filepath="$PROJECT_DIR$/interfaces_14/interfaces_14.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jvm_09/jvm_09.iml" filepath="$PROJECT_DIR$/jvm_09/jvm_09.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oo-05/oo-05.iml" filepath="$PROJECT_DIR$/oo-05/oo-05.iml" />
+      <module fileurl="file://$PROJECT_DIR$/polimorfismo_13/polimorfismo_13.iml" filepath="$PROJECT_DIR$/polimorfismo_13/polimorfismo_13.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wrappers_07/wrappers_07.iml" filepath="$PROJECT_DIR$/wrappers_07/wrappers_07.iml" />
+    </modules>
+  </component>
+</project>
