@@ -1,3 +1,4 @@
+import com.algaworks.financeira.modelo.ClienteFinanciavel;
 import com.algaworks.financeira.modelo.Fazenda;
 import com.algaworks.financeira.modelo.Funcionario;
 import com.algaworks.financeira.modelo.Industria;
