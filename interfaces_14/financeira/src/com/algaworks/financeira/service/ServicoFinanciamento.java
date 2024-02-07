@@ -14,7 +14,7 @@ public class ServicoFinanciamento {
 			));
 		}
 
-		System.out.printf("DEBUF: Financiamento aprovado no valor de R$%.2f com juros de %.2f%%. Limite máximo de R$%.2f%n",
+		System.out.printf("DEBUG: Financiamento aprovado no valor de R$%.2f com juros de %.2f%%. Limite máximo de R$%.2f%n",
 				valorSolicitado, jurosCalculado, limiteAprovado);
 	}
 
