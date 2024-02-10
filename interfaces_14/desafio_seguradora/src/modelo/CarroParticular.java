@@ -17,7 +17,9 @@ public class CarroParticular extends VeiculoAutomotor {
 	}
 
 	@Override
-	public void descrever() {
-		System.out.printf("Carro particular %s ano %d, avaliado em R$%.2f%n", getModelo(), getAnoFabricacao(), getValorMercado());
+	public String descrever() {
+		return String.format("Carro particular %s ano %d, avaliado em R$%.2f",
+				getModelo(), getAnoFabricacao(), getValorMercado());
 	}
+
 }

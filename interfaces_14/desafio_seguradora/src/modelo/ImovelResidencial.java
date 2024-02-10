@@ -33,8 +33,10 @@ public class ImovelResidencial implements BemSeguravel {
 	}
 
 	@Override
-	public void descrever() {
-		System.out.printf("Imóvel residencial com %dm2 de área construída, avaliado em R$%.2f%n", getAreaConstruida(), getValorMercado());
+	public String descrever() {
+		return String.format("Imóvel residencial com %dm2 de área construída, avaliado em R$%.2f",
+				getAreaConstruida(), getValorMercado());
+
 	}
 
 }

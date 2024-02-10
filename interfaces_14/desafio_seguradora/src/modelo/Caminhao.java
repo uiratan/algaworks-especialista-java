@@ -22,7 +22,9 @@ public class Caminhao extends VeiculoAutomotor {
 	}
 
 	@Override
-	public void descrever() {
-		System.out.printf("Caminhão %s ano %d, %d eixos, avaliado em R$%.2f%n", getModelo(), getAnoFabricacao(), getQuantidadeEixos(), getValorMercado());
+	public String descrever() {
+		return String.format("Caminhão %s ano %d, %d eixos, avaliado em R$%.2f",
+				getModelo(), getAnoFabricacao(), getQuantidadeEixos(), getValorMercado());
 	}
+
 }

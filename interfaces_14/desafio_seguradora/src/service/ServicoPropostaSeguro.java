@@ -8,8 +8,7 @@ public class ServicoPropostaSeguro {
 		System.out.println("---------------------");
 		System.out.println("Proposta de seguro");
 		System.out.println("---------------------");
-
-		bemSeguravel.descrever();
+		System.out.println(bemSeguravel.descrever());
 		System.out.printf("Prêmio: R$%.2f%n", bemSeguravel.calcularValorPremio());
 	}
 }
