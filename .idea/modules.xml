@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/PrimeiroProjeto/PrimeiroProjeto.iml" filepath="$PROJECT_DIR$/PrimeiroProjeto/PrimeiroProjeto.iml" />
       <module fileurl="file://$PROJECT_DIR$/arrays_08/arrays_08.iml" filepath="$PROJECT_DIR$/arrays_08/arrays_08.iml" />
+      <module fileurl="file://$PROJECT_DIR$/boas-praticas-heranca-interface_15/bank/bank.iml" filepath="$PROJECT_DIR$/boas-praticas-heranca-interface_15/bank/bank.iml" />
+      <module fileurl="file://$PROJECT_DIR$/boas-praticas-heranca-interface_15/boas-praticas-heranca-interface_15.iml" filepath="$PROJECT_DIR$/boas-praticas-heranca-interface_15/boas-praticas-heranca-interface_15.iml" />
       <module fileurl="file://$PROJECT_DIR$/clean-code-06/clean-code-06.iml" filepath="$PROJECT_DIR$/clean-code-06/clean-code-06.iml" />
       <module fileurl="file://$PROJECT_DIR$/encapsulamento_11/desafio_javabeans_11-5/copias_defensivas_11-09/copias_defensivas_11-09.iml" filepath="$PROJECT_DIR$/encapsulamento_11/desafio_javabeans_11-5/copias_defensivas_11-09/copias_defensivas_11-09.iml" />
       <module fileurl="file://$PROJECT_DIR$/fundamentos-02/des0203_correcao_erros/des0203_correcao_erros.iml" filepath="$PROJECT_DIR$/fundamentos-02/des0203_correcao_erros/des0203_correcao_erros.iml" />
@@ -20,7 +22,9 @@
       <module fileurl="file://$PROJECT_DIR$/interfaces_14/desafio_seguradora/desafio_seguradora.iml" filepath="$PROJECT_DIR$/interfaces_14/desafio_seguradora/desafio_seguradora.iml" />
       <module fileurl="file://$PROJECT_DIR$/ej.iml" filepath="$PROJECT_DIR$/ej.iml" />
       <module fileurl="file://$PROJECT_DIR$/encapsulamento_11/encapsulamento_11.iml" filepath="$PROJECT_DIR$/encapsulamento_11/encapsulamento_11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/excecoes_16/estoque/estoque.iml" filepath="$PROJECT_DIR$/excecoes_16/estoque/estoque.iml" />
       <module fileurl="file://$PROJECT_DIR$/estruturas-controle-operadores-03/estruturas-controle-operadores-03.iml" filepath="$PROJECT_DIR$/estruturas-controle-operadores-03/estruturas-controle-operadores-03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/excecoes_16/excecoes_16.iml" filepath="$PROJECT_DIR$/excecoes_16/excecoes_16.iml" />
       <module fileurl="file://$PROJECT_DIR$/interfaces_14/financeira/financeira.iml" filepath="$PROJECT_DIR$/interfaces_14/financeira/financeira.iml" />
       <module fileurl="file://$PROJECT_DIR$/fundamentos-02/fundamentos-02.iml" filepath="$PROJECT_DIR$/fundamentos-02/fundamentos-02.iml" />
       <module fileurl="file://$PROJECT_DIR$/heranca_12/heranca_12.iml" filepath="$PROJECT_DIR$/heranca_12/heranca_12.iml" />
