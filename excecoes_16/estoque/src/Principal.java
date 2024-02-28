@@ -17,20 +17,31 @@ public class Principal {
 
 	public static void comprar(Produto produto) {
 		var scanner = new Scanner(System.in);
-		System.out.print("Quantidade: ");
-		var quantidade = scanner.nextInt();
+		do {
+			try {
+				System.out.print("Quantidade: ");
+				var quantidade = scanner.nextInt();
 
-		efetuarBaixaEstoque(produto, quantidade);
-		System.out.println("Compra realizada");
+				efetuarBaixaEstoque(produto, quantidade);
+				System.out.println("Compra realizada");
+
+				break;
+			} catch (IllegalArgumentException e) {
+				e.printStackTrace();
+//				e.printStackTrace(System.out);
+				System.out.println("Erro na compra: " + e.getMessage());
+			}
+		} while (true);
 	}
 
 	public static void efetuarBaixaEstoque(Produto produto, int quantidade) {
-		try {
+//		try {
 			produto.retirarEstoque(quantidade);
-			System.out.printf("%d unidades retirada do estoque, Estoque atual: %d%n",
+			System.out.printf("%d unidades retiradas do estoque, Estoque atual: %d%n",
 					quantidade, produto.getQuantidadeEstoque());
-		} catch (IllegalArgumentException e) {
-			System.out.println("Erro ao efetuar baixa no estoque: " + e.getMessage());
-		}
+//		} catch (IllegalArgumentException e) {
+//			System.out.println("Erro ao efetuar baixa no estoque: " + e.getMessage());
+//			throw e;
+//		}
 	}
 }
