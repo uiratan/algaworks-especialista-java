@@ -1,4 +1,6 @@
 import com.algaworks.estoque.Produto;
+import com.algaworks.estoque.ProdutoInativoException;
+import com.algaworks.estoque.ProdutoSemEstoqueException;
 
 import java.util.Scanner;
 
@@ -6,13 +8,8 @@ public class Principal {
 
 	public static void main(String[] args) {
 		var produto = new Produto("Apple Watch");
-//		var produto1 = new Produto(null);
-//		produto.ativar();
-
-		produto.adicionarEstoque(10);
-//		produto.retirarEstoque(15);
-//		System.out.printf("Estoque: %d%n", produto.getQuantidadeEstoque());
-
+		produto.ativar();
+		produto.adicionarEstoque(20);
 		comprar(produto);
 	}
 
@@ -28,11 +25,15 @@ public class Principal {
 				System.out.println("Compra realizada");
 
 				break;
+
 			} catch (IllegalArgumentException e) {
-				e.printStackTrace();
-//				e.printStackTrace(System.out);
 				System.out.println("Erro na compra: " + e.getMessage());
-			} catch (IllegalStateException e) {
+
+			} catch (ProdutoSemEstoqueException e) {
+				System.out.printf("Erro na compra: %s. Estoque disponível: %d. Estoque necessário: %d%n",
+						e.getMessage(), e.getEstoqueDisponivel(), e.getEstoqueNecessario());
+
+			} catch (ProdutoInativoException e) {
 				System.out.println("Erro na compra: " + e.getMessage());
 				System.out.print("Deseja ativar o produto? ");
 
@@ -48,13 +49,8 @@ public class Principal {
 	}
 
 	public static void efetuarBaixaEstoque(Produto produto, int quantidade) {
-//		try {
-			produto.retirarEstoque(quantidade);
-			System.out.printf("%d unidades retiradas do estoque, Estoque atual: %d%n",
-					quantidade, produto.getQuantidadeEstoque());
-//		} catch (IllegalArgumentException e) {
-//			System.out.println("Erro ao efetuar baixa no estoque: " + e.getMessage());
-//			throw e;
-//		}
+		produto.retirarEstoque(quantidade);
+		System.out.printf("%d unidades retiradas do estoque, Estoque atual: %d%n",
+				quantidade, produto.getQuantidadeEstoque());
 	}
 }
