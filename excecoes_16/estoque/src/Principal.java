@@ -1,4 +1,5 @@
 import com.algaworks.estoque.Produto;
+import com.algaworks.estoque.ProdutoException;
 import com.algaworks.estoque.ProdutoInativoException;
 import com.algaworks.estoque.ProdutoSemEstoqueException;
 
@@ -8,7 +9,7 @@ public class Principal {
 
 	public static void main(String[] args) {
 		var produto = new Produto("Apple Watch");
-		produto.ativar();
+//		produto.ativar();
 		produto.adicionarEstoque(20);
 		comprar(produto);
 	}
@@ -29,9 +30,9 @@ public class Principal {
 			} catch (IllegalArgumentException e) {
 				System.out.println("Erro na compra: " + e.getMessage());
 
-			} catch (ProdutoSemEstoqueException e) {
-				System.out.printf("Erro na compra: %s. Estoque disponível: %d. Estoque necessário: %d%n",
-						e.getMessage(), e.getEstoqueDisponivel(), e.getEstoqueNecessario());
+//			} catch (ProdutoSemEstoqueException e) {
+//				System.out.printf("Erro na compra: %s. Estoque disponível: %d. Estoque necessário: %d%n",
+//						e.getMessage(), e.getEstoqueDisponivel(), e.getEstoqueNecessario());
 
 			} catch (ProdutoInativoException e) {
 				System.out.println("Erro na compra: " + e.getMessage());
@@ -45,7 +46,11 @@ public class Principal {
 					System.out.println("Ok. Compra não pode ser realizada.");
 					break;
 				}
+
+			} catch (ProdutoException e) {
+				System.out.println("Erro na compra: " + e.getMessage());
 			}
+
 		} while (true);
 	}
 

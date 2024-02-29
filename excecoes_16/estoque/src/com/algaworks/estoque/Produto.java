@@ -17,11 +17,6 @@ public class Produto {
 	}
 
 	public void setNome(String nome) {
-//		if (nome == null) {
-//			throw new NullPointerException("Nome deve ser infromado");
-//		}
-//		equivalente à seguinte execução da classe utilitaria
-
 		Objects.requireNonNull(nome, "Nome deve ser infromado");
 		this.nome = nome;
 	}
