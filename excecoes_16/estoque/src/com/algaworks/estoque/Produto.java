@@ -45,7 +45,7 @@ public class Produto {
 		this.ativo = false;
 	}
 
-	public void retirarEstoque(int quantidade) {
+	public void retirarEstoque(int quantidade) throws ProdutoSemEstoqueException, ProdutoInativoException {
 		if (quantidade <= 0) {
 			throw new IllegalArgumentException("Quantidade não pode ser zero ou negativa para retirada no estoque.");
 		}

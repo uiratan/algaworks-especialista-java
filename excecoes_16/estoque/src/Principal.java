@@ -35,6 +35,7 @@ public class Principal {
 
 			} catch (ProdutoInativoException e) {
 				System.out.println("Erro na compra: " + e.getMessage());
+
 				System.out.print("Deseja ativar o produto? ");
 
 				if (scanner.nextBoolean()) {
@@ -48,7 +49,7 @@ public class Principal {
 		} while (true);
 	}
 
-	public static void efetuarBaixaEstoque(Produto produto, int quantidade) {
+	public static void efetuarBaixaEstoque(Produto produto, int quantidade) throws ProdutoSemEstoqueException, ProdutoInativoException {
 		produto.retirarEstoque(quantidade);
 		System.out.printf("%d unidades retiradas do estoque, Estoque atual: %d%n",
 				quantidade, produto.getQuantidadeEstoque());
