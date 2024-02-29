@@ -26,6 +26,8 @@ public class Principal {
 
 			} catch (BaixaEstoqueException e) {
 				System.out.println("Erro na compra: " + e.getMessage());
+				System.out.println("Detalhe: " + e.getCause().getMessage());
+				e.printStackTrace();
 			}
 
 		} while (true);
@@ -39,10 +41,10 @@ public class Principal {
 					quantidade, produto.getQuantidadeEstoque());
 
 		} catch (IllegalArgumentException e) {
-			throw new BaixaEstoqueException("Erro ao realizar baixa no estoque.");
+			throw new BaixaEstoqueException("Erro ao realizar baixa no estoque.", e);
 
 		} catch (ProdutoException e) {
-			throw new BaixaEstoqueException("Erro ao realizar baixa no estoque.");
+			throw new BaixaEstoqueException("Erro ao realizar baixa no estoque.", e);
 		}
 
 	}
