@@ -1,7 +1,4 @@
-import com.algaworks.estoque.Produto;
-import com.algaworks.estoque.ProdutoException;
-import com.algaworks.estoque.ProdutoInativoException;
-import com.algaworks.estoque.ProdutoSemEstoqueException;
+import com.algaworks.estoque.*;
 
 import java.util.Scanner;
 
@@ -9,7 +6,7 @@ public class Principal {
 
 	public static void main(String[] args) {
 		var produto = new Produto("Apple Watch");
-//		produto.ativar();
+		produto.ativar();
 		produto.adicionarEstoque(20);
 		comprar(produto);
 	}
@@ -27,36 +24,26 @@ public class Principal {
 
 				break;
 
-			} catch (IllegalArgumentException e) {
-				System.out.println("Erro na compra: " + e.getMessage());
-
-//			} catch (ProdutoSemEstoqueException e) {
-//				System.out.printf("Erro na compra: %s. Estoque disponível: %d. Estoque necessário: %d%n",
-//						e.getMessage(), e.getEstoqueDisponivel(), e.getEstoqueNecessario());
-
-			} catch (ProdutoInativoException e) {
-				System.out.println("Erro na compra: " + e.getMessage());
-
-				System.out.print("Deseja ativar o produto? ");
-
-				if (scanner.nextBoolean()) {
-					produto.ativar();
-					System.out.println("Ok. Produto foi ativado.");
-				} else {
-					System.out.println("Ok. Compra não pode ser realizada.");
-					break;
-				}
-
-			} catch (ProdutoException e) {
+			} catch (BaixaEstoqueException e) {
 				System.out.println("Erro na compra: " + e.getMessage());
 			}
 
 		} while (true);
 	}
 
-	public static void efetuarBaixaEstoque(Produto produto, int quantidade) throws ProdutoSemEstoqueException, ProdutoInativoException {
-		produto.retirarEstoque(quantidade);
-		System.out.printf("%d unidades retiradas do estoque, Estoque atual: %d%n",
-				quantidade, produto.getQuantidadeEstoque());
+	public static void efetuarBaixaEstoque(Produto produto, int quantidade) throws BaixaEstoqueException {
+
+		try {
+			produto.retirarEstoque(quantidade);
+			System.out.printf("%d unidades retiradas do estoque, Estoque atual: %d%n",
+					quantidade, produto.getQuantidadeEstoque());
+
+		} catch (IllegalArgumentException e) {
+			throw new BaixaEstoqueException("Erro ao realizar baixa no estoque.");
+
+		} catch (ProdutoException e) {
+			throw new BaixaEstoqueException("Erro ao realizar baixa no estoque.");
+		}
+
 	}
 }
