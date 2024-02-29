@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/PrimeiroProjeto/PrimeiroProjeto.iml" filepath="$PROJECT_DIR$/PrimeiroProjeto/PrimeiroProjeto.iml" />
+      <module fileurl="file://$PROJECT_DIR$/excecoes_16/anuncios/anuncios.iml" filepath="$PROJECT_DIR$/excecoes_16/anuncios/anuncios.iml" />
       <module fileurl="file://$PROJECT_DIR$/arrays_08/arrays_08.iml" filepath="$PROJECT_DIR$/arrays_08/arrays_08.iml" />
       <module fileurl="file://$PROJECT_DIR$/boas-praticas-heranca-interface_15/bank/bank.iml" filepath="$PROJECT_DIR$/boas-praticas-heranca-interface_15/bank/bank.iml" />
       <module fileurl="file://$PROJECT_DIR$/boas-praticas-heranca-interface_15/boas-praticas-heranca-interface_15.iml" filepath="$PROJECT_DIR$/boas-praticas-heranca-interface_15/boas-praticas-heranca-interface_15.iml" />
