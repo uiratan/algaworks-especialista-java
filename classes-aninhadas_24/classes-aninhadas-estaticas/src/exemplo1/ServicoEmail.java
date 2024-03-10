@@ -1,3 +1,5 @@
+package exemplo1;
+
 public class ServicoEmail {
 
 	private String teste;

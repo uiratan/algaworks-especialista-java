@@ -1,9 +1,17 @@
-package com.algaworks.crm;
+package exemplo2;
+
+import java.util.Comparator;
+import java.util.List;
 
 public class Cliente {
 
-	private String nome;
-	private int idade;
+	public static enum Status {
+		ATIVO, BLOQUEADO
+	}
+
+	private final String nome;
+	private final int idade;
+	private Status status = Status.ATIVO;
 
 	public Cliente(String nome, int idade) {
 		this.nome = nome;
@@ -14,15 +22,35 @@ public class Cliente {
 		return nome;
 	}
 
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
-
 	public int getIdade() {
 		return idade;
 	}
 
-	public void setIdade(int idade) {
-		this.idade = idade;
+	public Status getStatus() {
+		return status;
 	}
+
+	public void setStatus(Status status) {
+		this.status = status;
+	}
+
+	@Override
+	public String toString() {
+		return "Cliente{" +
+				"nome='" + nome + '\'' +
+				", idade=" + idade +
+				'}';
+	}
+
+	public static void ordenarPorIdade(List<Cliente> clientes) {
+		clientes.sort(new IdadeComparator());
+	}
+
+	private static class IdadeComparator implements Comparator<Cliente> {
+		@Override
+		public int compare(Cliente o1, Cliente o2) {
+			return Integer.compare(o1.idade, o2.idade);
+		}
+	}
+
 }
