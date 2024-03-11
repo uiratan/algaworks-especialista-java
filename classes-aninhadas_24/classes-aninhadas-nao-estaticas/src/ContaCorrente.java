@@ -24,12 +24,13 @@ public class ContaCorrente {
 
 		private String descricao;
 		private BigDecimal valor;
+//		private BigDecimal saldo;
 
 		public Transacao(String descricao, BigDecimal valor) {
 			this.descricao = descricao;
 			this.valor = valor;
-			saldo = saldo.subtract(valor);
-			transacoes.add(this);
+			ContaCorrente.this.saldo = ContaCorrente.this.saldo.subtract(valor);
+			ContaCorrente.this.transacoes.add(this);
 		}
 
 		public String getDescricao() {
