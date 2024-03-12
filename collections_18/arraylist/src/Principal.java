@@ -13,13 +13,13 @@ public class Principal {
 		cadastro.adicionar("Tivoli Ecoresort", "Praia do Forte/BA", 2000);
 		cadastro.adicionar("Mercure", "Uberlândia/MG", 400);
 
-		ArrayList hoteis = cadastro.obterTodos();
+		ArrayList<Hotel> hoteis = cadastro.obterTodos();
 		imprimirHoteis(hoteis);
 	}
 
-	private static void imprimirHoteis(ArrayList hoteis) {
+	private static void imprimirHoteis(ArrayList<Hotel> hoteis) {
 		for (int i = 0; i < hoteis.size(); i++) {
-			Hotel hotel = (Hotel) hoteis.get(i);
+			Hotel hotel = hoteis.get(i);
 			System.out.printf("%s (%s) -> %.2f%n", hotel.getNome(),
 					hotel.getCidade(), hotel.getPrecoDiaria());
 		}
