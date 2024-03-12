@@ -2,6 +2,7 @@ import com.algaworks.agencia.CadastroHotel;
 import com.algaworks.agencia.Hotel;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class Principal {
 
@@ -13,25 +14,25 @@ public class Principal {
 		cadastro.adicionar("Tivoli Ecoresort", "Praia do Forte/BA", 2000);
 		cadastro.adicionar("Mercure", "Uberlândia/MG", 400);
 
-//		cadastro.adicionar("Vila Selvagem", "Fortim/CE", 1400);
-
+		cadastro.removerPorCidade("Fortim/CE");
+		
 		ArrayList<Hotel> hoteis = cadastro.obterTodos();
 
-//		var indice = hoteis.indexOf(new Hotel("Vila", "Fortim/CE", 0));
-		var indice = hoteis.lastIndexOf(new Hotel("Vila", "Fortim/CE", 0));
-		System.out.println(indice);
-
-//		System.out.println(hoteis.get(indice));
-
-//		imprimirHoteis(hoteis);
+		imprimirHoteis(hoteis);
 	}
 
 	private static void imprimirHoteis(ArrayList<Hotel> hoteis) {
-		for (int i = 0; i < hoteis.size(); i++) {
-			Hotel hotel = hoteis.get(i);
+		Iterator<Hotel> hotelIterator = hoteis.iterator();
+		while (hotelIterator.hasNext()) {
+			var hotel = hotelIterator.next();
 			System.out.printf("%s (%s) -> %.2f%n", hotel.getNome(),
 					hotel.getCidade(), hotel.getPrecoDiaria());
 		}
+
+//		for (int i = 0; i < hoteis.size(); i++) {
+//			Hotel hotel = hoteis.get(i);
+
+//		}
 	}
 
 }
