@@ -3,6 +3,7 @@ import com.algaworks.agencia.Hotel;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.ListIterator;
 
 public class Principal {
 
@@ -14,7 +15,7 @@ public class Principal {
 		cadastro.adicionar("Tivoli Ecoresort", "Praia do Forte/BA", 2000);
 		cadastro.adicionar("Mercure", "Uberlândia/MG", 400);
 
-		cadastro.removerPorCidade("Fortim/CE");
+//		cadastro.removerPorCidade("Fortim/CE");
 		
 		ArrayList<Hotel> hoteis = cadastro.obterTodos();
 
@@ -22,12 +23,26 @@ public class Principal {
 	}
 
 	private static void imprimirHoteis(ArrayList<Hotel> hoteis) {
-		Iterator<Hotel> hotelIterator = hoteis.iterator();
-		while (hotelIterator.hasNext()) {
-			var hotel = hotelIterator.next();
+		// enhanced for
+		for (Hotel hotel : hoteis) {
 			System.out.printf("%s (%s) -> %.2f%n", hotel.getNome(),
 					hotel.getCidade(), hotel.getPrecoDiaria());
 		}
+
+
+//		ListIterator<Hotel> hotelIterator = hoteis.listIterator(hoteis.size());
+//		while (hotelIterator.hasPrevious()) {
+//			var hotel = hotelIterator.previous();
+//			System.out.printf("%s (%s) -> %.2f%n", hotel.getNome(),
+//					hotel.getCidade(), hotel.getPrecoDiaria());
+//		}
+
+//		Iterator<Hotel> hotelIterator = hoteis.iterator();
+//		while (hotelIterator.hasNext()) {
+//			var hotel = hotelIterator.next();
+//			System.out.printf("%s (%s) -> %.2f%n", hotel.getNome(),
+//					hotel.getCidade(), hotel.getPrecoDiaria());
+//		}
 
 //		for (int i = 0; i < hoteis.size(); i++) {
 //			Hotel hotel = hoteis.get(i);
