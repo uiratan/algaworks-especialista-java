@@ -9,17 +9,17 @@ public class Principal {
 	public static void main(String[] args) {
 		CadastroHotel cadastro = new CadastroHotel();
 		cadastro.adicionar("Jaguaribe Lodge", "Fortim/CE", 1300);
-		cadastro.adicionar("Vila Selvagem", "Fortim/CE", 1400);
-		cadastro.adicionar("Hotel Fazenda Dona Carolina", "Itatiba/SP", 2200);
+		cadastro.adicionar("Vila Selvagem", "Fortim/CE", 1300);
+		cadastro.adicionar("Hotel Fazenda Dona Carolina", "Itatiba/SP", 1300);
 		cadastro.adicionar("Tivoli Ecoresort", "Praia do Forte/BA", 2000);
 		cadastro.adicionar("Mercure", "Uberlândia/MG", 400);
 
-		Hotel[] hoteis = cadastro.obterTodosComoArray();
-		System.out.println(Arrays.toString(hoteis));
+		List<Hotel> hoteis = cadastro.obterTodos();
+//		cadastro.ordenar();
 
-//		List<Hotel> hoteis = cadastro.obterTodos();
-//
-//		imprimirHoteis(hoteis);
+		cadastro.ordenarPorPreco();
+
+		imprimirHoteis(hoteis);
 	}
 
 	private static void imprimirHoteis(List<Hotel> hoteis) {
