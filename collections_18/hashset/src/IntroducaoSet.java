@@ -1,7 +1,7 @@
 import java.util.HashSet;
 import java.util.Set;
 
-public class Principal {
+public class IntroducaoSet {
 	public static void main(String[] args) {
 		Set<Integer> numeros = new HashSet<>();
 		numeros.add(100);
