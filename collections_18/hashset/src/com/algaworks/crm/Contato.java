@@ -51,6 +51,7 @@ public class Contato {
 
 	@Override
 	public boolean equals(Object o) {
+		System.out.printf("%s = %s%n", getEmail(), ((Contato) o).getEmail());
 		if (this == o) return true;
 		if (o == null || getClass() != o.getClass()) return false;
 		Contato contato = (Contato) o;
@@ -59,6 +60,6 @@ public class Contato {
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(email);
+		return email.charAt(0);
 	}
 }
