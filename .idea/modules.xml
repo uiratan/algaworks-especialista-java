@@ -50,6 +50,7 @@
       <module fileurl="file://$PROJECT_DIR$/interfaces-funcionais_25/interfaces-funcionais_25.iml" filepath="$PROJECT_DIR$/interfaces-funcionais_25/interfaces-funcionais_25.iml" />
       <module fileurl="file://$PROJECT_DIR$/interfaces_14/interfaces_14.iml" filepath="$PROJECT_DIR$/interfaces_14/interfaces_14.iml" />
       <module fileurl="file://$PROJECT_DIR$/jvm_09/jvm_09.iml" filepath="$PROJECT_DIR$/jvm_09/jvm_09.iml" />
+      <module fileurl="file://$PROJECT_DIR$/collections_18/linkedhashmap_treemap/linkedhashmap_treemap.iml" filepath="$PROJECT_DIR$/collections_18/linkedhashmap_treemap/linkedhashmap_treemap.iml" />
       <module fileurl="file://$PROJECT_DIR$/collections_18/linkedhashset/linkedhashset.iml" filepath="$PROJECT_DIR$/collections_18/linkedhashset/linkedhashset.iml" />
       <module fileurl="file://$PROJECT_DIR$/collections_18/linkedlist/linkedlist.iml" filepath="$PROJECT_DIR$/collections_18/linkedlist/linkedlist.iml" />
       <module fileurl="file://$PROJECT_DIR$/collections_18/list_to_array/list_to_array.iml" filepath="$PROJECT_DIR$/collections_18/list_to_array/list_to_array.iml" />
