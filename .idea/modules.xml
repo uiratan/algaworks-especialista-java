@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/collections_18/API-List-para-manipular-arrays/API-List-para-manipular-arrays.iml" filepath="$PROJECT_DIR$/collections_18/API-List-para-manipular-arrays/API-List-para-manipular-arrays.iml" />
       <module fileurl="file://$PROJECT_DIR$/PrimeiroProjeto/PrimeiroProjeto.iml" filepath="$PROJECT_DIR$/PrimeiroProjeto/PrimeiroProjeto.iml" />
       <module fileurl="file://$PROJECT_DIR$/excecoes_16/anuncios/anuncios.iml" filepath="$PROJECT_DIR$/excecoes_16/anuncios/anuncios.iml" />
       <module fileurl="file://$PROJECT_DIR$/collections_18/arraylist/arraylist.iml" filepath="$PROJECT_DIR$/collections_18/arraylist/arraylist.iml" />
