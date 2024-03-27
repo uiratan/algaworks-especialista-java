@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="4">
+  <component name="AdditionalModuleElements">
+    <content url="file:////wsl.localhost/Ubuntu/mnt/wsl/PHYSICALDRIVE1/java/algaworks/ej">
+      <sourceFolder url="file:////wsl.localhost/Ubuntu/mnt/wsl/PHYSICALDRIVE1/java/algaworks/ej/src/main/java" isTestSource="false" />
+    </content>
+  </component>
+  <component name="SonarLintModuleSettings">
+    <option name="uniqueId" value="4304abd4-5253-4af5-bfbf-becb8e799e40" />
+  </component>
+</module>

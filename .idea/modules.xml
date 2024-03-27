@@ -2,68 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/collections_18/API-List-para-manipular-arrays/API-List-para-manipular-arrays.iml" filepath="$PROJECT_DIR$/collections_18/API-List-para-manipular-arrays/API-List-para-manipular-arrays.iml" />
-      <module fileurl="file://$PROJECT_DIR$/PrimeiroProjeto/PrimeiroProjeto.iml" filepath="$PROJECT_DIR$/PrimeiroProjeto/PrimeiroProjeto.iml" />
-      <module fileurl="file://$PROJECT_DIR$/excecoes_16/anuncios/anuncios.iml" filepath="$PROJECT_DIR$/excecoes_16/anuncios/anuncios.iml" />
-      <module fileurl="file://$PROJECT_DIR$/collections_18/arraylist/arraylist.iml" filepath="$PROJECT_DIR$/collections_18/arraylist/arraylist.iml" />
-      <module fileurl="file://$PROJECT_DIR$/arrays_08/arrays_08.iml" filepath="$PROJECT_DIR$/arrays_08/arrays_08.iml" />
-      <module fileurl="file://$PROJECT_DIR$/boas-praticas-heranca-interface_15/bank/bank.iml" filepath="$PROJECT_DIR$/boas-praticas-heranca-interface_15/bank/bank.iml" />
-      <module fileurl="file://$PROJECT_DIR$/collections_18/boas-praticas-encapsulamento-colecoes-nao-modificaveis/boas-praticas-encapsulamento-colecoes-nao-modificaveis.iml" filepath="$PROJECT_DIR$/collections_18/boas-praticas-encapsulamento-colecoes-nao-modificaveis/boas-praticas-encapsulamento-colecoes-nao-modificaveis.iml" />
-      <module fileurl="file://$PROJECT_DIR$/boas-praticas-heranca-interface_15/boas-praticas-heranca-interface_15.iml" filepath="$PROJECT_DIR$/boas-praticas-heranca-interface_15/boas-praticas-heranca-interface_15.iml" />
-      <module fileurl="file://$PROJECT_DIR$/collections_18/boas-praticas-reduza-acoplamento-usando-tipo-da-interface/boas-praticas-reduza-acoplamento-usando-tipo-da-interface.iml" filepath="$PROJECT_DIR$/collections_18/boas-praticas-reduza-acoplamento-usando-tipo-da-interface/boas-praticas-reduza-acoplamento-usando-tipo-da-interface.iml" />
-      <module fileurl="file://$PROJECT_DIR$/classes-aninhadas_24/classes-aninhadas-estaticas/classes-aninhadas-estaticas.iml" filepath="$PROJECT_DIR$/classes-aninhadas_24/classes-aninhadas-estaticas/classes-aninhadas-estaticas.iml" />
-      <module fileurl="file://$PROJECT_DIR$/classes-aninhadas_24/classes-aninhadas-nao-estaticas/classes-aninhadas-nao-estaticas.iml" filepath="$PROJECT_DIR$/classes-aninhadas_24/classes-aninhadas-nao-estaticas/classes-aninhadas-nao-estaticas.iml" />
-      <module fileurl="file://$PROJECT_DIR$/classes-aninhadas_24/classes-aninhadas_24.iml" filepath="$PROJECT_DIR$/classes-aninhadas_24/classes-aninhadas_24.iml" />
-      <module fileurl="file://$PROJECT_DIR$/classes-aninhadas_24/classes-anonimas/classes-anonimas.iml" filepath="$PROJECT_DIR$/classes-aninhadas_24/classes-anonimas/classes-anonimas.iml" />
-      <module fileurl="file://$PROJECT_DIR$/classes-aninhadas_24/classes-locais/classes-locais.iml" filepath="$PROJECT_DIR$/classes-aninhadas_24/classes-locais/classes-locais.iml" />
-      <module fileurl="file://$PROJECT_DIR$/clean-code-06/clean-code-06.iml" filepath="$PROJECT_DIR$/clean-code-06/clean-code-06.iml" />
-      <module fileurl="file://$PROJECT_DIR$/collections_18/colecoes-imutaveis/colecoes-imutaveis.iml" filepath="$PROJECT_DIR$/collections_18/colecoes-imutaveis/colecoes-imutaveis.iml" />
-      <module fileurl="file://$PROJECT_DIR$/collections_18/collections_18.iml" filepath="$PROJECT_DIR$/collections_18/collections_18.iml" />
-      <module fileurl="file://$PROJECT_DIR$/encapsulamento_11/desafio_javabeans_11-5/copias_defensivas_11-09/copias_defensivas_11-09.iml" filepath="$PROJECT_DIR$/encapsulamento_11/desafio_javabeans_11-5/copias_defensivas_11-09/copias_defensivas_11-09.iml" />
-      <module fileurl="file://$PROJECT_DIR$/excecoes_16/crm/crm.iml" filepath="$PROJECT_DIR$/excecoes_16/crm/crm.iml" />
-      <module fileurl="file://$PROJECT_DIR$/fundamentos-02/des0203_correcao_erros/des0203_correcao_erros.iml" filepath="$PROJECT_DIR$/fundamentos-02/des0203_correcao_erros/des0203_correcao_erros.iml" />
-      <module fileurl="file://$PROJECT_DIR$/fundamentos-02/des0209_ticketmedio/des0209_ticketmedio.iml" filepath="$PROJECT_DIR$/fundamentos-02/des0209_ticketmedio/des0209_ticketmedio.iml" />
-      <module fileurl="file://$PROJECT_DIR$/fundamentos-02/des0216_peso_cargas/des0216_peso_cargas.iml" filepath="$PROJECT_DIR$/fundamentos-02/des0216_peso_cargas/des0216_peso_cargas.iml" />
-      <module fileurl="file://$PROJECT_DIR$/fundamentos-02/des0218_idade_media/des0218_idade_media.iml" filepath="$PROJECT_DIR$/fundamentos-02/des0218_idade_media/des0218_idade_media.iml" />
-      <module fileurl="file://$PROJECT_DIR$/oo-05/des0507_clinica_vet/des0507_clinica_vet.iml" filepath="$PROJECT_DIR$/oo-05/des0507_clinica_vet/des0507_clinica_vet.iml" />
-      <module fileurl="file://$PROJECT_DIR$/oo-05/des0525_fp/des0525_fp.iml" filepath="$PROJECT_DIR$/oo-05/des0525_fp/des0525_fp.iml" />
-      <module fileurl="file://$PROJECT_DIR$/oo-05/des0535_biblioteca/des0535_biblioteca.iml" filepath="$PROJECT_DIR$/oo-05/des0535_biblioteca/des0535_biblioteca.iml" />
-      <module fileurl="file://$PROJECT_DIR$/oo-05/des0541_numero_util/des0541_numero_util.iml" filepath="$PROJECT_DIR$/oo-05/des0541_numero_util/des0541_numero_util.iml" />
-      <module fileurl="file://$PROJECT_DIR$/excecoes_16/desafio/desafio.iml" filepath="$PROJECT_DIR$/excecoes_16/desafio/desafio.iml" />
-      <module fileurl="file://$PROJECT_DIR$/classes-aninhadas_24/desafio-24/desafio-24.iml" filepath="$PROJECT_DIR$/classes-aninhadas_24/desafio-24/desafio-24.iml" />
-      <module fileurl="file://$PROJECT_DIR$/collections_18/desafio-mapas/desafio-mapas.iml" filepath="$PROJECT_DIR$/collections_18/desafio-mapas/desafio-mapas.iml" />
-      <module fileurl="file://$PROJECT_DIR$/collections_18/desafio-set/desafio-set.iml" filepath="$PROJECT_DIR$/collections_18/desafio-set/desafio-set.iml" />
-      <module fileurl="file://$PROJECT_DIR$/heranca_12/desafio_12_15_rh/desafio_12_15_rh.iml" filepath="$PROJECT_DIR$/heranca_12/desafio_12_15_rh/desafio_12_15_rh.iml" />
-      <module fileurl="file://$PROJECT_DIR$/polimorfismo_13/desafio_13_11_impostos/desafio_13_11_impostos.iml" filepath="$PROJECT_DIR$/polimorfismo_13/desafio_13_11_impostos/desafio_13_11_impostos.iml" />
-      <module fileurl="file://$PROJECT_DIR$/generics_17/desafio_17/desafio_17.iml" filepath="$PROJECT_DIR$/generics_17/desafio_17/desafio_17.iml" />
-      <module fileurl="file://$PROJECT_DIR$/encapsulamento_11/desafio_javabeans_11-5/desafio_javabeans_11-5.iml" filepath="$PROJECT_DIR$/encapsulamento_11/desafio_javabeans_11-5/desafio_javabeans_11-5.iml" />
-      <module fileurl="file://$PROJECT_DIR$/collections_18/desafio_listas/desafio_listas.iml" filepath="$PROJECT_DIR$/collections_18/desafio_listas/desafio_listas.iml" />
-      <module fileurl="file://$PROJECT_DIR$/interfaces_14/desafio_seguradora/desafio_seguradora.iml" filepath="$PROJECT_DIR$/interfaces_14/desafio_seguradora/desafio_seguradora.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ej.iml" filepath="$PROJECT_DIR$/ej.iml" />
-      <module fileurl="file://$PROJECT_DIR$/encapsulamento_11/encapsulamento_11.iml" filepath="$PROJECT_DIR$/encapsulamento_11/encapsulamento_11.iml" />
-      <module fileurl="file://$PROJECT_DIR$/excecoes_16/estoque/estoque.iml" filepath="$PROJECT_DIR$/excecoes_16/estoque/estoque.iml" />
-      <module fileurl="file://$PROJECT_DIR$/estruturas-controle-operadores-03/estruturas-controle-operadores-03.iml" filepath="$PROJECT_DIR$/estruturas-controle-operadores-03/estruturas-controle-operadores-03.iml" />
-      <module fileurl="file://$PROJECT_DIR$/excecoes_16/excecoes/excecoes.iml" filepath="$PROJECT_DIR$/excecoes_16/excecoes/excecoes.iml" />
-      <module fileurl="file://$PROJECT_DIR$/excecoes_16/excecoes_16.iml" filepath="$PROJECT_DIR$/excecoes_16/excecoes_16.iml" />
-      <module fileurl="file://$PROJECT_DIR$/interfaces_14/financeira/financeira.iml" filepath="$PROJECT_DIR$/interfaces_14/financeira/financeira.iml" />
-      <module fileurl="file://$PROJECT_DIR$/fundamentos-02/fundamentos-02.iml" filepath="$PROJECT_DIR$/fundamentos-02/fundamentos-02.iml" />
-      <module fileurl="file://$PROJECT_DIR$/generics_17/generics_17.iml" filepath="$PROJECT_DIR$/generics_17/generics_17.iml" />
-      <module fileurl="file://$PROJECT_DIR$/collections_18/hashmap_hashtable/hashmap_hashtable.iml" filepath="$PROJECT_DIR$/collections_18/hashmap_hashtable/hashmap_hashtable.iml" />
-      <module fileurl="file://$PROJECT_DIR$/collections_18/hashset/hashset.iml" filepath="$PROJECT_DIR$/collections_18/hashset/hashset.iml" />
-      <module fileurl="file://$PROJECT_DIR$/heranca_12/heranca_12.iml" filepath="$PROJECT_DIR$/heranca_12/heranca_12.iml" />
-      <module fileurl="file://$PROJECT_DIR$/interfaces-funcionais_25/interfaces-funcionais_25.iml" filepath="$PROJECT_DIR$/interfaces-funcionais_25/interfaces-funcionais_25.iml" />
-      <module fileurl="file://$PROJECT_DIR$/interfaces_14/interfaces_14.iml" filepath="$PROJECT_DIR$/interfaces_14/interfaces_14.iml" />
-      <module fileurl="file://$PROJECT_DIR$/jvm_09/jvm_09.iml" filepath="$PROJECT_DIR$/jvm_09/jvm_09.iml" />
-      <module fileurl="file://$PROJECT_DIR$/collections_18/linkedhashmap_treemap/linkedhashmap_treemap.iml" filepath="$PROJECT_DIR$/collections_18/linkedhashmap_treemap/linkedhashmap_treemap.iml" />
-      <module fileurl="file://$PROJECT_DIR$/collections_18/linkedhashset/linkedhashset.iml" filepath="$PROJECT_DIR$/collections_18/linkedhashset/linkedhashset.iml" />
-      <module fileurl="file://$PROJECT_DIR$/collections_18/linkedlist/linkedlist.iml" filepath="$PROJECT_DIR$/collections_18/linkedlist/linkedlist.iml" />
-      <module fileurl="file://$PROJECT_DIR$/collections_18/list_to_array/list_to_array.iml" filepath="$PROJECT_DIR$/collections_18/list_to_array/list_to_array.iml" />
-      <module fileurl="file://$PROJECT_DIR$/oo-05/oo-05.iml" filepath="$PROJECT_DIR$/oo-05/oo-05.iml" />
-      <module fileurl="file://$PROJECT_DIR$/collections_18/ordenacao-list/ordenacao-list.iml" filepath="$PROJECT_DIR$/collections_18/ordenacao-list/ordenacao-list.iml" />
-      <module fileurl="file://$PROJECT_DIR$/polimorfismo_13/polimorfismo_13.iml" filepath="$PROJECT_DIR$/polimorfismo_13/polimorfismo_13.iml" />
-      <module fileurl="file://$PROJECT_DIR$/collections_18/treeset/treeset.iml" filepath="$PROJECT_DIR$/collections_18/treeset/treeset.iml" />
-      <module fileurl="file://$PROJECT_DIR$/collections_18/vector/vector.iml" filepath="$PROJECT_DIR$/collections_18/vector/vector.iml" />
-      <module fileurl="file://$PROJECT_DIR$/wrappers_07/wrappers_07.iml" filepath="$PROJECT_DIR$/wrappers_07/wrappers_07.iml" />
+      <module fileurl="file://$PROJECT_DIR$/especialista-java.iml" filepath="$PROJECT_DIR$/especialista-java.iml" />
     </modules>
   </component>
 </project>
