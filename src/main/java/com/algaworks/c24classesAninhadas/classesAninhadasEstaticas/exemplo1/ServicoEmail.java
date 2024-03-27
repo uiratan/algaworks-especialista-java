@@ -2,7 +2,9 @@ package com.algaworks.c24classesAninhadas.classesAninhadasEstaticas.exemplo1;
 
 public class ServicoEmail {
 
+	@SuppressWarnings("unused")
 	private String teste;
+	
 	public void enviar(Mensagem mensagem) {
 		System.out.printf("Enviando de %s para %s: %s%n",
 				mensagem.remetente, mensagem.getDestinatario(), mensagem.getTexto());

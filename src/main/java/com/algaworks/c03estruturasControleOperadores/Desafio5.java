@@ -5,6 +5,8 @@ import java.util.Scanner;
 public class Desafio5 {
 
     public static void main(String[] args) {
+        
+        @SuppressWarnings("resource")
         Scanner entrada = new Scanner(System.in);
 
         boolean digitarProximo = true;

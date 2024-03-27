@@ -29,7 +29,7 @@ public class ContaCorrente implements Conta {
 	@Override
 	public void aplicarEmInvestimento(double valor) {
 		this.saldo -= valor;
-		// TODO aqui aplicaria o dinheiro no investimento
+		// TO DO aqui aplicaria o dinheiro no investimento
 	}
 
 }

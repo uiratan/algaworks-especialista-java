@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Desafio2 {
 
     public static void main(String[] args) {
+        @SuppressWarnings("resource")
         Scanner entrada = new Scanner(System.in);
 
         System.out.print("Digite um número positivo inteiro: ");

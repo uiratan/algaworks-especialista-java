@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class des20_for {
     public static void main(String[] args) {
+        @SuppressWarnings("resource")
         Scanner input = new Scanner(System.in);
         int sum = 0;
 

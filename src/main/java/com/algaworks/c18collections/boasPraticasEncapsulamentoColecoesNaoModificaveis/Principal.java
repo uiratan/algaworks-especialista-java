@@ -11,6 +11,7 @@ public class Principal {
     public static void main(String[] args) {
         ItemVenda mouse = new ItemVenda("Magic mouse", 700);
         ItemVenda adaptadorUsb = new ItemVenda("Adaptador USB", 400);
+        @SuppressWarnings("unused")
         ItemVenda macbook = new ItemVenda("Macbook Pro", 15_000);
         ItemVenda limpaTela = new ItemVenda("Limpa tela", 70);
 

@@ -1,7 +1,6 @@
 package com.algaworks.c08arrays;
 
 import java.util.Arrays;
-import java.util.Comparator;
 
 public class Principal {
     public static void main(String[] args) {

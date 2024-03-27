@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class des20_while {
     public static void main(String[] args) {
+        @SuppressWarnings("resource")
         Scanner input = new Scanner(System.in);
         int number = 0;
         int sum = 0;

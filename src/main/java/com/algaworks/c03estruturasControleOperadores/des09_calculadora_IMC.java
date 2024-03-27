@@ -1,6 +1,5 @@
 package com.algaworks.c03estruturasControleOperadores;
 
-import java.io.InputStream;
 import java.util.Scanner;
 
 public class des09_calculadora_IMC {
@@ -13,6 +12,7 @@ Acima do peso ideal     Entre 27.4 e 32.3   Entre 27.9 e 31.1
 Obeso                   Maior que 32.3      Maior que 31.1
  */
     public static void main(String[] args) {
+        @SuppressWarnings("resource")
         Scanner entrada = new Scanner(System.in);
 
         System.out.println("Homem (0) ou Mulher (1): ");

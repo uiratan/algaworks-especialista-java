@@ -8,6 +8,7 @@ public class TesteInicializacao {
         meuCarro.anoFabricacao = 2021;
         meuCarro.proprietario.nome = "Maria";
 
+        @SuppressWarnings("unused")
         Pessoa proprietarioAntigo = meuCarro.proprietario;
 
         meuCarro.proprietario = new Pessoa();

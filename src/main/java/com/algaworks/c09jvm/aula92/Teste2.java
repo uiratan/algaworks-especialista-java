@@ -7,7 +7,7 @@ public class Teste2 {
     }
 
     static void metodo1(int x) {
-        int z = x * 2;
+        // int z = x * 2;
         metodo2();
     }
 

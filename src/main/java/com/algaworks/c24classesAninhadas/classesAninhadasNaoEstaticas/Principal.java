@@ -8,11 +8,11 @@ public class Principal {
 		ContaCorrente conta = new ContaCorrente(new BigDecimal("1000"));
 		System.out.println(conta.getSaldo());
 
-		ContaCorrente.Transacao transacao1 = conta.new Transacao(
-				"Compra no mercado", new BigDecimal("180.9"));
+		@SuppressWarnings("unused")
+		ContaCorrente.Transacao transacao1 = conta.new Transacao("Compra no mercado", new BigDecimal("180.9"));
 
-		ContaCorrente.Transacao transacao2 = conta.new Transacao(
-				"Academia", new BigDecimal("170"));
+		@SuppressWarnings("unused")	
+		ContaCorrente.Transacao transacao2 = conta.new Transacao("Academia", new BigDecimal("170"));
 
 		System.out.println(conta.getSaldo());
 

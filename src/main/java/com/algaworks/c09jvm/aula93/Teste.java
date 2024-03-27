@@ -5,6 +5,7 @@ public class Teste {
   public static void main(String[] args) {
     imprimirUsoMemoria();
 
+    @SuppressWarnings("unused")
     byte[] x = new byte[500 * 1024 * 1024];
     imprimirUsoMemoria();
     x = null;

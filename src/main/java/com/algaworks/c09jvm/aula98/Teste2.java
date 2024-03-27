@@ -20,8 +20,11 @@ public class Teste2 {
             pilha.imprimirEstatisticas();
         } while (clienteRetirado != null);
 
+        @SuppressWarnings("unused")
         Cliente c1 = new Cliente();
+        @SuppressWarnings("unused")
         Cliente c2 = new Cliente();
+        @SuppressWarnings("unused")
         Cliente c3 = new Cliente();
     }
 

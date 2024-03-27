@@ -1,6 +1,5 @@
 package com.algaworks.c08arrays;
 
-import java.util.Arrays;
 
 public class Principal3 {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.algaworks.c24classesAninhadas.classes;
+package com.algaworks.c24classesAninhadas.classesAninhadasEstaticas.exemplo2;
 
 import java.util.Comparator;
 import java.util.List;

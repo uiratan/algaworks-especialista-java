@@ -1,7 +1,5 @@
 package com.algaworks.c02fundamentos.desafio0209ticketMedio;
 
-import javax.sound.midi.Soundbank;
-
 public class TicketMedio {
 
     public static void main(String[] args) {

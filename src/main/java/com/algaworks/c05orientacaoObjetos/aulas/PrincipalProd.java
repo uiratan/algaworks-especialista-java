@@ -2,7 +2,9 @@ package com.algaworks.c05orientacaoObjetos.aulas;
 
 public class PrincipalProd {
     public static void main(String[] args) {
+        @SuppressWarnings("unused")
         Produto produto1 = new Produto();
+        @SuppressWarnings("unused")
         Produto produto2 = new Produto();
 
         Produto.alterarCustoEmbalagem(20);

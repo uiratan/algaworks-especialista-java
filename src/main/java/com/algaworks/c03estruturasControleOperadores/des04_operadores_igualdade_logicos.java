@@ -9,15 +9,16 @@ public class des04_operadores_igualdade_logicos {
     Não são bissextos todos os demais anos
      */
     public static void main(String[] args) {
-        Scanner entrada = new Scanner(System.in);
-        int continuar = 1;
+        try (Scanner entrada = new Scanner(System.in)) {
+            int continuar = 1;
 
-        while (continuar == 1) {
-            System.out.println("Informe o ano: ");
-            int ano = entrada.nextInt();
-            System.out.printf("O ano %d %s bissexto%n", ano, isBissexto(ano) ? "é" : "não é");
-            System.out.println("Para continuar digite 1");
-            continuar = entrada.nextInt();
+            while (continuar == 1) {
+                System.out.println("Informe o ano: ");
+                int ano = entrada.nextInt();
+                System.out.printf("O ano %d %s bissexto%n", ano, isBissexto(ano) ? "é" : "não é");
+                System.out.println("Para continuar digite 1");
+                continuar = entrada.nextInt();
+            }
         }
     }
 

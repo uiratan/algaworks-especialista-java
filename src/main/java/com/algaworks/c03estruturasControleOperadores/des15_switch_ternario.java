@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class des15_switch_ternario {
     public static void main(String[] args) {
+        @SuppressWarnings("resource")
         Scanner entrada = new Scanner(System.in);
 
         System.out.print("Valor do empréstimo: ");

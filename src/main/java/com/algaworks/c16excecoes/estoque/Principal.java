@@ -12,6 +12,7 @@ public class Principal {
 	}
 
 	public static void comprar(Produto produto) {
+		@SuppressWarnings("resource")
 		var scanner = new Scanner(System.in);
 
 		do {

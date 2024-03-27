@@ -14,6 +14,7 @@ public class Teste2 {
   }
 
   static void criarObjeto() {
+    @SuppressWarnings("unused")        
     byte[] x = new byte[500 * 1024 * 1024];
   }
 

@@ -1,10 +1,10 @@
 package com.algaworks.c03estruturasControleOperadores;
 
-import java.util.InvalidPropertiesFormatException;
 import java.util.Scanner;
 
 public class des20_while2 {
     public static void main(String[] args) {
+        @SuppressWarnings("resource")
         Scanner input = new Scanner(System.in);
 
         System.out.print("Numero para ser invertido: ");

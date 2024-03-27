@@ -1,7 +1,5 @@
 package com.algaworks.c18collections.desafioSet;
 
-import java.util.HashSet;
-import java.util.LinkedHashSet;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -24,7 +22,7 @@ public class Principal {
 		cidades.add(new Cidade(2304400, "Fortaleza", 2_703_391));
 		cidades.add(new Cidade(1100205, "Porto Velho", 548_952));
 
-		// TODO Iterar no conjunto de cidades
+		// TO DO Iterar no conjunto de cidades
 		for (Cidade cidade : cidades) {
 			System.out.println(cidade);
 		}

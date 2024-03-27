@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class des20_do_while {
 
     public static void main(String[] args) {
+        @SuppressWarnings("resource")
         Scanner input = new Scanner(System.in);
         int answer = 1;
         int number;

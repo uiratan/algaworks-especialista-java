@@ -24,6 +24,7 @@ public class Principal {
 //		imprimirHoteis(hoteis);
 	}
 
+	@SuppressWarnings("unused")
 	private static void imprimirHoteis(List<Hotel> hoteis) {
 		// enhanced for
 		for (Hotel hotel : hoteis) {
