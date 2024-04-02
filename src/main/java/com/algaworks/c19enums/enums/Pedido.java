@@ -31,6 +31,8 @@ public class Pedido {
         this.origem = origem;
     }
 
-
+    public int getTempoEntregaEmHoras() {
+        
+    }
 
 }
