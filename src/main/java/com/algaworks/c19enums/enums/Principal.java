@@ -6,32 +6,11 @@ public class Principal {
 
         Pedido pedido = new Pedido();
         pedido.setNomeCliente("João da Silva");
-        pedido.setStatus(StatusPedido.SEPARADO);
-
-        System.out.println(pedido.getTempoEntregaEmHoras());
-        
-
-        // pedido.setOrigem(OrigemPedido.BALCAO);
-
-        // System.out.println(pedido.getStatus());
-        // System.out.println(pedido.getOrigem());
-
-        // System.out.println(StatusPedido.EMITIDO.ordinal());
-        // System.out.println(StatusPedido.EMITIDO.name());
-        // System.out.println(StatusPedido.EMITIDO);
-
-        // for (StatusPedido status : StatusPedido.values()) {
-        //     System.out.printf("%d - %s%n", status.ordinal(), status.name());
-        // }
-
-        // String textoStatus = "CANCELADO";
-        // StatusPedido status = StatusPedido.valueOf(textoStatus);
-        // System.out.println(status.ordinal() + " - " + status.name());
-
-        // int numero = 5;
-        // StatusPedido status = StatusPedido.values()[numero];
-        // System.out.println(status.ordinal() + " - " + status.name());
-
+        pedido.setValorTotal(120);
+        pedido.marcarComoEntregue();
+        pedido.emitir();
+        pedido.cancelar();
+        System.out.println(pedido.getStatus());
     }
 
 }

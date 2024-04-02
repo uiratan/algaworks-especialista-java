@@ -3,6 +3,7 @@ package com.algaworks.c19enums.enums;
 public class Pedido {
 
     private String nomeCliente;
+    private double valorTotal;
     private StatusPedido status = StatusPedido.RASCUNHO;
     private OrigemPedido origem = OrigemPedido.BALCAO;
 
@@ -14,13 +15,17 @@ public class Pedido {
         this.nomeCliente = nomeCliente;
     }
 
+    public double getValorTotal() {
+        return valorTotal;
+    }
+
+    public void setValorTotal(double valor) {
+        this.valorTotal = valor;
+    }
+
     
     public StatusPedido getStatus() {
         return status;
-    }
-
-    public void setStatus(StatusPedido status) {
-        this.status = status;
     }
 
     public OrigemPedido getOrigem() {
@@ -33,15 +38,22 @@ public class Pedido {
 
     public int getTempoEntregaEmHoras() {
         return status.getTempoEntregaEmHoras();
-        
-        // return switch(status) {
-        //     case EMITIDO -> 12;
-        //     case FATURADO -> 10;
-        //     // case SEPARADO -> 8;
-        //     case DESPACHADO -> 6;
-        //     case ENTREGUE -> 0;
-        //     default -> throw new IllegalStateException("Pedido não pode ser entregue.");
-        // };
+    }
+
+    public void marcarComoEntregue() {
+        status = StatusPedido.ENTREGUE;
+    }
+
+    public void emitir() {
+        status = StatusPedido.EMITIDO;
+    }
+
+    public void cancelar() {
+        if (getStatus().podeMudarParaCancelado(getValorTotal())) {
+            status = StatusPedido.CANCELADO;
+        } else {
+            throw new IllegalStateException("Pedido não pode ser cancelado");
+        }
     }
 
 }

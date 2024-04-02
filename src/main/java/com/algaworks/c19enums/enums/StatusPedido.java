@@ -22,4 +22,9 @@ public enum StatusPedido {
     public Integer getTempoEntregaEmHoras() {
         return tempoEntregaEmHoras;
     }
+
+    public boolean podeMudarParaCancelado(double valorPedido) {
+        return StatusPedido.RASCUNHO.equals(this) || StatusPedido.EMITIDO.equals(this) && valorPedido < 100;
+    }
+    
 }
