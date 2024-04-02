@@ -56,4 +56,9 @@ public class Pedido {
         }
     }
 
+    public void setStatus(StatusPedido status) {
+        this.status = status;
+    }
+
+    
 }
