@@ -1,5 +1,7 @@
 package com.algaworks.c25interfacesFuncionais;
 
+import java.util.List;
+
 import com.algaworks.c25interfacesFuncionais.crm.CadastroCliente;
 import com.algaworks.c25interfacesFuncionais.crm.Cliente;
 
@@ -12,23 +14,8 @@ public class Principal {
 		cadastroCliente.adicionar(new Cliente("Joaquina", 45));
 		cadastroCliente.adicionar(new Cliente("Josefina", 25));
 
-//		var filtro = new Filtro<Cliente>() {
-//			@Override
-//			public boolean avaliar(Cliente cliente) {
-//				return cliente.getIdade() > 40;
-//			}
-//		};
-
-//		var clientes = cadastroCliente.getClientes();
-
-//		Filtro<Cliente> filtro = (Cliente cliente) -> {
-//			boolean resultado = cliente.getIdade() > 40;
-//			return resultado;
-//		};
-
-		var clientes = cadastroCliente.consultar((Cliente cliente) -> {
-			boolean resultado = cliente.getIdade() > 40;
-			return resultado;
+		List<Cliente> clientes = cadastroCliente.consultar((Cliente cliente) -> {
+			return cliente.getIdade() > 40;
 		});
 
 		for (Cliente cliente : clientes) {
