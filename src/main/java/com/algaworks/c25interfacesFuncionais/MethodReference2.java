@@ -22,11 +22,12 @@ public class MethodReference2 {
         // produtos.forEach(produto -> produto.inativar());
         // produtos.forEach(Produto::inativar);
 
-        var servicoInativacaoProduto = new ServicoInativacaoProduto();
+        // var servicoInativacaoProduto = new ServicoInativacaoProduto();
         
         // produtos.forEach(produto -> servicoInativacaoProduto.processar(produto));
-        produtos.forEach(servicoInativacaoProduto::processar);
-
+        // produtos.forEach(produto -> ServicoInativacaoProduto.processar(produto));
+        produtos.forEach(ServicoInativacaoProduto::processar);
+        
 		// produtos.forEach(produto -> System.out.println(produto));
         produtos.forEach(System.out::println);
     }
