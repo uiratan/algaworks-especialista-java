@@ -1,9 +1,6 @@
-package com.algaworks.c25interfacesFuncionais;
+package com.algaworks.c25interfacesFuncionais.crm;
 
 import java.util.List;
-
-import com.algaworks.c25interfacesFuncionais.crm.CadastroCliente;
-import com.algaworks.c25interfacesFuncionais.crm.Cliente;
 
 public class Principal {
 	public static void main(String[] args) {
