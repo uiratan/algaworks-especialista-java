@@ -12,7 +12,11 @@ public class Produto {
 	private BigDecimal preco;
 	private int quantidade;
 	private Status status = Status.ATIVO;
-
+	
+	public Produto(String nome) {
+		this.nome = nome;
+	}
+	
 	public Produto(String nome, BigDecimal preco, int quantidade) {
 		super();
 		this.nome = nome;
@@ -25,7 +29,8 @@ public class Produto {
 		this.status = status;
 	}
 
-	public String getNome() {
+
+    public String getNome() {
 		return nome;
 	}
 
