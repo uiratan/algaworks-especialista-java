@@ -21,6 +21,6 @@ public class MethodReference2 {
 
         produtos.forEach(Produto::inativar);
 
-		produtos.forEach(System.out::println);
+		produtos.forEach(produto -> System.out.println(produto));
     }
 }
