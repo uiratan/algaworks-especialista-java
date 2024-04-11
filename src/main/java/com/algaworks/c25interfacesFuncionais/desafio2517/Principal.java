@@ -3,9 +3,9 @@ package com.algaworks.c25interfacesFuncionais.desafio2517;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Comparator;
-import java.util.function.Consumer;
-import java.util.function.Function;
-import java.util.function.Predicate;
+// import java.util.function.Consumer;
+// import java.util.function.Function;
+// import java.util.function.Predicate;
 
 public class Principal {
 

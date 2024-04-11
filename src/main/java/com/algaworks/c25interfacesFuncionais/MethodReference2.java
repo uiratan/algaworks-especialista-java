@@ -2,7 +2,6 @@ package com.algaworks.c25interfacesFuncionais;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
-import java.util.Comparator;
 
 import com.algaworks.c25interfacesFuncionais.estoque.Produto;
 import com.algaworks.c25interfacesFuncionais.estoque.ServicoInativacaoProduto;
