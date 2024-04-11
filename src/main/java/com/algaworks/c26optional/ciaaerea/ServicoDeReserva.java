@@ -1,6 +1,7 @@
 package com.algaworks.c26optional.ciaaerea;
 
 import java.util.*;
+import java.util.function.Supplier;
 
 public class ServicoDeReserva {
 
@@ -17,6 +18,10 @@ public class ServicoDeReserva {
             throw new RuntimeException(
                     String.format("Reserva %s já existe", reserva.getCodigo()));
         }
+    }
+
+    public Reserva buscar(String codigo, Supplier<Reserva> reservaNaoExiste) {
+        return buscar(codigo).orElseGet(reservaNaoExiste);
     }
 
     public Optional<Reserva> buscar(String codigo) {
