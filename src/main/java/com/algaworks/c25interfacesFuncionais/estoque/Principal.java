@@ -2,7 +2,7 @@ package com.algaworks.c25interfacesFuncionais.estoque;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
-import java.util.function.Consumer;
+import java.util.Comparator;
 
 public class Principal {
 
@@ -15,13 +15,19 @@ public class Principal {
 		produtos.add(new Produto("Arroz", new BigDecimal("15.9"), 0));
 		produtos.add(new Produto("Chocolate", new BigDecimal("25.1"), 10, Produto.Status.INATIVO));
 		
-		// produtos.forEach(produto -> produto.setQuantidade(0));
-		// produtos.forEach(produto -> System.out.println(produto));
+		// produtos.sort((p1, p2) -> Integer.compare(p1.getQuantidade(), p2.getQuantidade()));
+		
+		// Function<Produto, Integer> function1 = produto -> produto.getQuantidade();
+		// Function<Produto, String> function2 = produto -> produto.getNome();
+		// produtos.sort(Comparator.comparing(function1).thenComparing(function2));
 
-		Consumer<Produto> consumerZerarEstoque = produto -> produto.setQuantidade(0);
-		Consumer<Produto> consumerImprimir = produto -> System.out.println(produto);
+		// aqui faz o boxing/unboxing pois so trabalha com classes 
+		// produtos.sort(Comparator.comparing(produto -> produto.getQuantidade()));
 
-		produtos.forEach(consumerZerarEstoque.andThen(consumerImprimir));
+		// nao faz boxing, trabalha diretamente com o tipo primitivo
+		produtos.sort(Comparator.comparingInt(produto -> produto.getQuantidade()));
+
+		produtos.forEach(produto -> System.out.println(produto));
 	}
 	
 }
