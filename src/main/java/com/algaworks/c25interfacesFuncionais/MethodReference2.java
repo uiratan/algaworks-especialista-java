@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 
 import com.algaworks.c25interfacesFuncionais.estoque.Produto;
+import com.algaworks.c25interfacesFuncionais.estoque.ServicoInativacaoProduto;
 
 public class MethodReference2 {
     public static void main(String[] args) {
@@ -17,10 +18,16 @@ public class MethodReference2 {
 		produtos.add(new Produto("Arroz", new BigDecimal("15.9"), 0));
 		produtos.add(new Produto("Chocolate", new BigDecimal("25.1"), 10, Produto.Status.INATIVO));
 		
-		produtos.sort(Comparator.comparingInt(Produto::getQuantidade));
 
-        produtos.forEach(Produto::inativar);
+        // produtos.forEach(produto -> produto.inativar());
+        // produtos.forEach(Produto::inativar);
 
-		produtos.forEach(produto -> System.out.println(produto));
+        var servicoInativacaoProduto = new ServicoInativacaoProduto();
+        
+        // produtos.forEach(produto -> servicoInativacaoProduto.processar(produto));
+        produtos.forEach(servicoInativacaoProduto::processar);
+
+		// produtos.forEach(produto -> System.out.println(produto));
+        produtos.forEach(System.out::println);
     }
 }
