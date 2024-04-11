@@ -1,6 +1,7 @@
 package com.algaworks.c26optional;
 
 import com.algaworks.c26optional.ciaaerea.Reserva;
+import com.algaworks.c26optional.ciaaerea.ReservaNaoEncontradaException;
 import com.algaworks.c26optional.ciaaerea.ServicoDeReserva;
 import com.algaworks.c26optional.ciaaerea.Voo;
 
@@ -16,10 +17,15 @@ public class Principal {
         // servicoDeReserva.buscar("28A888xxx")
         //     .ifPresent(reserva -> reserva.adicionarBagagens(10));
 
-        servicoDeReserva.buscar("28A888")
-            .ifPresentOrElse(
-                reserva -> reserva.adicionarBagagens(10), 
-                () -> System.out.println("Reserva não encontrada"));
+        // servicoDeReserva.buscar("28A888")
+        //     .ifPresentOrElse(
+        //         reserva -> reserva.adicionarBagagens(10), 
+        //         () -> System.out.println("Reserva não encontrada"));
+
+        servicoDeReserva.buscar("28A888xx")
+        .ifPresentOrElse(
+            reserva -> reserva.adicionarBagagens(10), 
+            () -> { throw new ReservaNaoEncontradaException(); } );
 
         servicoDeReserva.getReservas()
             .forEach(System.out::println);
