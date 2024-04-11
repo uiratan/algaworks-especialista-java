@@ -14,9 +14,8 @@ public class Principal {
 		cadastroCliente.adicionar(new Cliente("Joaquina", 45));
 		cadastroCliente.adicionar(new Cliente("Josefina", 25));
 
-		List<Cliente> clientes = cadastroCliente.getClientes();
-		clientes.sort((cliente1, cliente2) -> Integer.compare(cliente1.getIdade(), cliente2.getIdade()));
-
+		List<Cliente> clientes = cadastroCliente.consultar(cliente -> cliente.getIdade() >= 40);
+		
 		for (Cliente cliente : clientes) {
 			System.out.printf("%s - %d%n", cliente.getNome(), cliente.getIdade());
 		}
