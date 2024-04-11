@@ -1,6 +1,7 @@
 package com.algaworks.c26optional.ciaaerea;
 
 import java.util.Objects;
+import java.util.Optional;
 
 public class ServicoDeBagagem {
 
@@ -16,14 +17,9 @@ public class ServicoDeBagagem {
             throw new IllegalArgumentException("Quantidade de bagagens inválida");
         }
 
-        var reserva = servicoDeReserva.buscar(codigoReserva);
-
-        if (reserva == null) {
-            throw new ReservaNaoEncontradaException("Reserva não existe");
-        }
-
-        reserva.adicionarBagagens(quantidadeBagagens);
-
+        Optional<Reserva> reservaOptional = servicoDeReserva.buscar(codigoReserva);
+        reservaOptional.get().adicionarBagagens(quantidadeBagagens);
+        
     }
 
 }
