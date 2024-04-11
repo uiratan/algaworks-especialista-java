@@ -9,4 +9,8 @@ public class ReservaNaoEncontradaException extends RuntimeException {
     public ReservaNaoEncontradaException(String message) {
         super(message);
     }
+
+    public static ReservaNaoEncontradaException erroReservaInexistente() {
+        return new ReservaNaoEncontradaException("Reserva não existe");
+    }
 }
