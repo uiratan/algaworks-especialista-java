@@ -1,7 +1,6 @@
 package com.algaworks.c26optional.ciaaerea;
 
 import java.util.Objects;
-import java.util.Optional;
 
 public class ServicoDeBagagem {
 

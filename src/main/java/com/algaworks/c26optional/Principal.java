@@ -1,5 +1,6 @@
 package com.algaworks.c26optional;
 
+import com.algaworks.c26optional.ciaaerea.Passageiro;
 import com.algaworks.c26optional.ciaaerea.Reserva;
 import com.algaworks.c26optional.ciaaerea.ServicoDeBagagem;
 import com.algaworks.c26optional.ciaaerea.ServicoDeReserva;
@@ -17,10 +18,18 @@ public class Principal {
 
         servicoDeBagagem.contratar("28A888", 10);
         
-        Reserva reserva = servicoDeReserva.buscar("28A888")
+        Passageiro passageiro = servicoDeReserva.buscar("28A888")
             .filter(r -> r.getQuantidadeBagagens() > 0)
+            .map(Reserva::getPassageiro)
             .orElseThrow(RuntimeException::new);
+        
+        System.out.println(passageiro);
 
-        System.out.println(reserva);
+
+        // Reserva reserva = servicoDeReserva.buscar("28A888")
+        //     .filter(r -> r.getQuantidadeBagagens() > 0)
+        //     .orElseThrow(RuntimeException::new);
+
+        // System.out.println(reserva);
     }
 }
