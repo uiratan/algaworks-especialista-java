@@ -1,8 +1,11 @@
 package com.algaworks.c27streams;
 
 import java.util.List;
+import java.util.Set;
+import java.util.stream.Stream;
 
 import com.algaworks.c27streams.estoque.CadastroProduto;
+import com.algaworks.c27streams.estoque.Categoria;
 import com.algaworks.c27streams.estoque.Produto;
 
 public class Principal {
@@ -11,12 +14,22 @@ public class Principal {
         CadastroProduto cadastroProduto = new CadastroProduto();
         List<Produto> produtos = cadastroProduto.obterTodos();      
 
+        // Stream<Categoria> stream = produtos.stream()
+        //     .filter(Produto::temEstoque)
+        //     .flatMap(p -> p.getCategorias().stream())
+        //     .distinct();
+        
+
+        // // stream.forEach(obj -> System.out.println(obj.getClass().getName() + " - " + obj));
+        // stream.forEach(obj -> {
+        //     System.out.println(obj.getClass().getName() + " - " + obj);
+        // });
+
         produtos.stream()
             .filter(Produto::temEstoque)
-            .map(Produto::getFabricante)
+            .flatMap(p -> p.getCategorias().stream())
             .distinct()
             .forEach(System.out::println);
-        
     }
 
 }
