@@ -11,17 +11,10 @@ public class Principal {
     public static void main(String[] args) {
         CadastroProduto cadastroProduto = new CadastroProduto();
         List<Produto> produtos = cadastroProduto.obterTodos();      
-
-        // for (Produto produto : produtos) {
-        //     produto.ativar();
-        //     System.out.println(produto);
-        // }
         
         Stream<Produto> stream = produtos.stream();
-        stream.forEach(produto -> {
-            produto.ativar();
-            System.out.println(produto);
-        });
+        Stream<Produto> streamComEstoque = stream.filter(Produto::temEstoque);
+
     }
 
 }
