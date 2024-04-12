@@ -26,8 +26,8 @@ public class ServicoDeBagagem {
         //     .adicionarBagagens(quantidadeBagagens);
 
         servicoDeReserva.buscar(codigoReserva)
-        .orElseThrow(ReservaNaoEncontradaException::erroReservaInexistente)
-        .adicionarBagagens(quantidadeBagagens);
+            .orElseThrow(ReservaNaoEncontradaException::erroReservaInexistente)
+            .adicionarBagagens(quantidadeBagagens);
     }
 
 }
