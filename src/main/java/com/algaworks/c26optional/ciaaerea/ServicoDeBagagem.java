@@ -17,17 +17,9 @@ public class ServicoDeBagagem {
             throw new IllegalArgumentException("Quantidade de bagagens inválida");
         }
 
-        // servicoDeReserva.buscar(codigoReserva)
-        //     .orElseThrow(ReservaNaoEncontradaException::new)
-        //     .adicionarBagagens(quantidadeBagagens);
-        
-        // servicoDeReserva.buscar(codigoReserva)
-        //     .orElseThrow(() -> new ReservaNaoEncontradaException("Reserva não encontrada: " + codigoReserva))
-        //     .adicionarBagagens(quantidadeBagagens);
-
         servicoDeReserva.buscar(codigoReserva)
-        .orElseThrow(ReservaNaoEncontradaException::erroReservaInexistente)
-        .adicionarBagagens(quantidadeBagagens);
+            .orElseThrow(ReservaNaoEncontradaException::erroReservaInexistente)
+            .adicionarBagagens(quantidadeBagagens);
     }
 
 }
