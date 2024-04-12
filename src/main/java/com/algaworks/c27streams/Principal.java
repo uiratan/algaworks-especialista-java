@@ -1,6 +1,7 @@
 package com.algaworks.c27streams;
 
 import java.util.List;
+import java.util.function.IntBinaryOperator;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
@@ -13,11 +14,23 @@ public class Principal {
         CadastroProduto cadastroProduto = new CadastroProduto();
         List<Produto> produtos = cadastroProduto.obterTodos();      
 
-        IntStream stream = produtos.stream()
-            .filter(Produto::temEstoque)
-            .mapToInt(Produto::getQuantidade);
+        // IntBinaryOperator operacaoSoma = (subtotal, valor) -> subtotal + valor;
 
-        stream.forEach(num -> System.out.println(num * 2));
+        // int totalEstoque = produtos.stream()
+        //     .mapToInt(p -> p.getQuantidade())
+        //     // .reduce(0, operacaoSoma);
+        //     // .reduce(0, (subtotal, valor) -> subtotal + valor);
+        //     .reduce(0, Integer::sum);
+
+        // System.out.println("Total em estoque: " + totalEstoque);
+
+        
+        int maximoEstoque = produtos.stream()
+            .mapToInt(p -> p.getQuantidade())
+            .reduce(0, Integer::min);
+
+        System.out.println(maximoEstoque);
+
     }
 
 }
