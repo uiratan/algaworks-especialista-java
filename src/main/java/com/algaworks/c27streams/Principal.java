@@ -12,12 +12,13 @@ public class Principal {
         CadastroProduto cadastroProduto = new CadastroProduto();
         List<Produto> produtos = cadastroProduto.obterTodos();      
         
-        produtos.stream()
+        boolean temProdutoComEstoque = produtos.stream()
+            .peek(System.out::println)
             .filter(Produto::temEstoque)
             .sorted(Comparator.comparingInt(Produto::getQuantidade))
-            .forEach(produto -> System.out.printf("%s = %d unidades%n",
-                produto.getNome(), produto.getQuantidade()));
+            .anyMatch(Produto::temEstoque);
 
+        System.out.println(temProdutoComEstoque);
         
     }
 
