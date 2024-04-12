@@ -1,9 +1,12 @@
 package com.algaworks.c27streams;
 
+import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.function.BiConsumer;
 
 import com.algaworks.c27streams.estoque.CadastroProduto;
+import com.algaworks.c27streams.estoque.Categoria;
 import com.algaworks.c27streams.estoque.Produto;
 
 public class Principal {
@@ -12,18 +15,16 @@ public class Principal {
         CadastroProduto cadastroProduto = new CadastroProduto();
         List<Produto> produtos = cadastroProduto.obterTodos();  
         
-        // produtos.stream()
-        //     .filter(Produto::temEstoque)
-        //     .mapToInt(Produto::getQuantidade)
-        //     .min()
-        //     .ifPresent(System.out::println);
-
-        Produto produtoMaisBarato = produtos.stream()
+        List<Categoria> categorias = produtos.stream()
             .filter(Produto::temEstoque)
-            .min(Comparator.comparing(Produto::getPreco))
-            .orElseThrow(() -> new RuntimeException("Nenhum produto encontrado"));
+            .flatMap(p -> p.getCategorias().stream())
+            .distinct()
+            // .collect(() -> new ArrayList<>(), 
+            //     (lista, elemento) -> lista.add(elemento),
+            //     (lista1, lista2) -> lista1.addAll(lista2));
+            .collect(ArrayList::new, ArrayList::add, ArrayList::addAll);
 
-        System.out.println(produtoMaisBarato);
+        System.out.println(categorias);
 
     }
 
