@@ -1,9 +1,7 @@
 package com.algaworks.c27streams;
 
+import java.math.BigDecimal;
 import java.util.List;
-import java.util.function.IntBinaryOperator;
-import java.util.stream.IntStream;
-import java.util.stream.Stream;
 
 import com.algaworks.c27streams.estoque.CadastroProduto;
 import com.algaworks.c27streams.estoque.Produto;
@@ -14,22 +12,22 @@ public class Principal {
         CadastroProduto cadastroProduto = new CadastroProduto();
         List<Produto> produtos = cadastroProduto.obterTodos();      
 
-        // IntBinaryOperator operacaoSoma = (subtotal, valor) -> subtotal + valor;
+        // BigDecimal valorEmEstoque = produtos.stream()
+        //     // .map(produto -> produto.getPreco().multiply(new BigDecimal(produto.getQuantidade())))
+        //     .map(Produto::getValorEstoque)
+        //     .reduce(BigDecimal.ZERO, BigDecimal::add);
 
-        // int totalEstoque = produtos.stream()
-        //     .mapToInt(p -> p.getQuantidade())
-        //     // .reduce(0, operacaoSoma);
-        //     // .reduce(0, (subtotal, valor) -> subtotal + valor);
-        //     .reduce(0, Integer::sum);
-
-        // System.out.println("Total em estoque: " + totalEstoque);
-
+        BigDecimal valorEmEstoque = produtos.stream()
+            .reduce(BigDecimal.ZERO, (accumulator, produto) -> {
+                BigDecimal valorEstoqueProduto = produto.getPreco()
+                    .multiply(new BigDecimal(produto.getQuantidade()));
+                return accumulator.add(valorEstoqueProduto);
+            }, BigDecimal::add);
         
-        int maximoEstoque = produtos.stream()
-            .mapToInt(p -> p.getQuantidade())
-            .reduce(0, Integer::min);
+        // BigDecimal valorEmEstoque = produtos.stream()
+        //     .reduce(BigDecimal.ZERO, (accumulator, produto) -> accumulator.add(produto.getValorEstoque()), BigDecimal::add);
 
-        System.out.println(maximoEstoque);
+        System.out.println("Valor em estoque: " + valorEmEstoque);
 
     }
 

@@ -89,6 +89,11 @@ public class Produto {
 		this.categorias.add(categoria);
 	}
 
+
+	public BigDecimal getValorEstoque() {
+		return getPreco().multiply(new BigDecimal(getQuantidade()));
+	}
+
 	public void removerCategoria(Categoria categoria) {
 		this.categorias.remove(categoria);
 	}
