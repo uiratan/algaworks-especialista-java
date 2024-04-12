@@ -1,5 +1,6 @@
 package com.algaworks.c27streams;
 
+import java.util.Comparator;
 import java.util.List;
 
 import com.algaworks.c27streams.estoque.CadastroProduto;
@@ -11,24 +12,13 @@ public class Principal {
         CadastroProduto cadastroProduto = new CadastroProduto();
         List<Produto> produtos = cadastroProduto.obterTodos();      
         
-        // boolean temProdutoNoEstoque = produtos.stream()
-        //     .peek(System.out::println)
-        //     .anyMatch(Produto::temEstoque);
+        produtos.stream()
+            .filter(Produto::temEstoque)
+            .sorted(Comparator.comparingInt(Produto::getQuantidade))
+            .forEach(produto -> System.out.printf("%s = %d unidades%n",
+                produto.getNome(), produto.getQuantidade()));
 
-        // System.out.println("Tem produtos no estoque? " + temProdutoNoEstoque);
-
-        // boolean todosProdutosPossuemEstoque = produtos.stream()
-        //     .peek(System.out::println)
-        //     .allMatch(Produto::temEstoque);
-
-        // System.out.println("Todos os produtos possuem estoque? " + todosProdutosPossuemEstoque);
-
-        boolean nenhumProdutoPossuiEstoque = produtos.stream()
-            .peek(System.out::println)
-            .noneMatch(Produto::temEstoque);
-
-        System.out.println("Nenhum produto possue estoque? " + nenhumProdutoPossuiEstoque);
-            
+        
     }
 
 }
