@@ -30,6 +30,7 @@ public class Principal {
             .flatMap(p -> p.getCategorias().stream())
             .distinct()
             .forEach(System.out::println);
+            
     }
 
 }
