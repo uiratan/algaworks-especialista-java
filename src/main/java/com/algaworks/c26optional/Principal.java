@@ -25,11 +25,5 @@ public class Principal {
         
         System.out.println(passageiro);
 
-
-        // Reserva reserva = servicoDeReserva.buscar("28A888")
-        //     .filter(r -> r.getQuantidadeBagagens() > 0)
-        //     .orElseThrow(RuntimeException::new);
-
-        // System.out.println(reserva);
     }
 }
