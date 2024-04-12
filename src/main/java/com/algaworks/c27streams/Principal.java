@@ -1,9 +1,9 @@
 package com.algaworks.c27streams;
 
+import static java.util.stream.Collectors.toCollection;
+
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
-import java.util.function.BiConsumer;
 
 import com.algaworks.c27streams.estoque.CadastroProduto;
 import com.algaworks.c27streams.estoque.Categoria;
@@ -19,10 +19,8 @@ public class Principal {
             .filter(Produto::temEstoque)
             .flatMap(p -> p.getCategorias().stream())
             .distinct()
-            // .collect(() -> new ArrayList<>(), 
-            //     (lista, elemento) -> lista.add(elemento),
-            //     (lista1, lista2) -> lista1.addAll(lista2));
-            .collect(ArrayList::new, ArrayList::add, ArrayList::addAll);
+            // .collect(toList());
+            .collect(toCollection(ArrayList::new));
 
         System.out.println(categorias);
 
