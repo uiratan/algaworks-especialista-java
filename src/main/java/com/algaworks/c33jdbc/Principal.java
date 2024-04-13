@@ -7,14 +7,20 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.Scanner;
 
 public class Principal {
 
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Pesquisa por nome do cliente: ");
+        String nomePesquisa = scanner.nextLine();
+
+
         try (
             Connection conexao = DriverManager.getConnection("jdbc:mysql://localhost:3306/comercial", "root", "");
             Statement comando = conexao.createStatement();
-            ResultSet resultado = comando.executeQuery("SELECT * FROM venda");
+            ResultSet resultado = comando.executeQuery("SELECT * FROM venda WHERE nome_cliente like '%" + nomePesquisa + "%'");
         ) {
 
             while (resultado.next()) {
