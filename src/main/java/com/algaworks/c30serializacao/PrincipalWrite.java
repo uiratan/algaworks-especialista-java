@@ -11,7 +11,7 @@ import java.nio.file.Path;
 import java.time.LocalDate;
 import java.time.Month;
 
-public class PrincipalWrtite {
+public class PrincipalWrite {
 
     public static void main(String[] args) {
         Funcionario funcionario = new Funcionario("João", LocalDate.of(2005, Month.MARCH, 20),

@@ -1,11 +1,16 @@
 package com.algaworks.c30serializacao;
 
+import java.io.Serial;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
 public class Funcionario implements Serializable {
 
+    @Serial
+    private static final long serialVersionUID = 1;
+
+    private Integer codigo;
     private String nome;
     private LocalDate dataNascimento;
     private transient BigDecimal salario;
@@ -15,6 +20,8 @@ public class Funcionario implements Serializable {
         this.dataNascimento = dataNascimento;
         this.salario = salario;
     }
+
+    public void testar() {}
 
     public String getNome() {
         return nome;
@@ -40,13 +47,25 @@ public class Funcionario implements Serializable {
         this.salario = salario;
     }
 
+    
+    public static long getSerialversionuid() {
+        return serialVersionUID;
+    }
+
+    public Integer getCodigo() {
+        return codigo;
+    }
+
+    public void setCodigo(Integer codigo) {
+        this.codigo = codigo;
+    }
+
     @Override
     public String toString() {
-        return "Funcionario{" +
-                "nome='" + nome + '\'' +
-                ", dataNascimento=" + dataNascimento +
-                ", salario=" + salario +
-                '}';
+        return "Funcionario [codigo=" + codigo + ", nome=" + nome + ", dataNascimento=" + dataNascimento + ", salario="
+                + salario + "]";
     }
+
+    
     
 }
