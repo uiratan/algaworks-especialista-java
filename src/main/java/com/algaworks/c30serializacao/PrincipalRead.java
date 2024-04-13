@@ -1,20 +1,13 @@
 package com.algaworks.c30serializacao;
 
-import static java.nio.file.StandardOpenOption.CREATE;
 import static java.nio.file.StandardOpenOption.READ;
-import static java.nio.file.StandardOpenOption.WRITE;
 
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.math.BigDecimal;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.time.LocalDate;
-import java.time.Month;
 
-public class Principal {
+public class PrincipalRead {
 
     public static void main(String[] args) {
         Path path = Path.of(
