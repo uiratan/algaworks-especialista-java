@@ -1,11 +1,10 @@
 package com.algaworks.c34repository.comercial.servico;
 
 import java.math.BigDecimal;
-import java.sql.*;
 import java.time.LocalDate;
 
-import com.algaworks.c34repository.comercial.PersistenciaException;
 import com.algaworks.c34repository.comercial.entidade.Venda;
+import com.algaworks.c34repository.comercial.repositorio.VendaRepositorio;
 
 public class CadastroVendaServico {
 
@@ -18,31 +17,9 @@ public class CadastroVendaServico {
             throw new NegocioException("Data do pagamento não pode ser uma data futura");
         }
 
-        String dml = """
-            insert into venda (
-                nome_cliente,
-                valor_total,
-                data_pagamento
-            )
-            values (?, ?, ?)
-            """;
+        var vendaRepositorio = new VendaRepositorio();
+        return vendaRepositorio.adicionar(new Venda(null, nomeCliente, valorTotal, dataPagamento));
 
-        try (Connection conexao = DriverManager.getConnection("jdbc:mysql://localhost:3306/comercial", "root", "");
-             PreparedStatement comando = conexao.prepareStatement(dml, Statement.RETURN_GENERATED_KEYS)) {
-            comando.setString(1, nomeCliente);
-            comando.setBigDecimal(2, valorTotal);
-            comando.setDate(3, Date.valueOf(dataPagamento));
-            comando.executeUpdate();
-
-            ResultSet codigoGeradoResultSet = comando.getGeneratedKeys();
-            codigoGeradoResultSet.next();
-            Long codigoGerado = codigoGeradoResultSet.getLong(1);
-
-            return new Venda(codigoGerado, nomeCliente, valorTotal, dataPagamento);
-            
-        } catch (SQLException e) {
-            throw new PersistenciaException(e);
-        }
     }
 
 }
