@@ -8,7 +8,7 @@ import java.time.LocalDate;
 public class Funcionario implements Serializable {
 
     @Serial
-    private static final long serialVersionUID = 1;
+    private static final long serialVersionUID = -1463350243628007010L;
 
     private Integer codigo;
     private String nome;
@@ -21,7 +21,8 @@ public class Funcionario implements Serializable {
         this.salario = salario;
     }
 
-    public void testar() {}
+    public void testar() {
+    }
 
     public String getNome() {
         return nome;
@@ -47,7 +48,6 @@ public class Funcionario implements Serializable {
         this.salario = salario;
     }
 
-    
     public static long getSerialversionuid() {
         return serialVersionUID;
     }
@@ -66,6 +66,4 @@ public class Funcionario implements Serializable {
                 + salario + "]";
     }
 
-    
-    
 }
