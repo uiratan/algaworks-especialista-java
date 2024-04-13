@@ -7,14 +7,13 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.Scanner;
 
-public class Principal {
+public class Consulta {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) {     
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Pesquisa por nome do cliente: ");
+        System.out.println("Nome para pesquisa: ");
         String nomePesquisa = scanner.nextLine();
 
         try (
