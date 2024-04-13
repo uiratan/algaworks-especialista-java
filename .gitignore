@@ -97,3 +97,4 @@ fabric.properties
 .idea/caches/build_file_checksums.ser
 
 .vscode/
+src/main/java/com/algaworks/c30serializacao/objetos/joao.ser
