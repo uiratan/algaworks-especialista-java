@@ -11,7 +11,7 @@ public class Principal {
 
     public static void main(String[] args) {
 
-        try (var fabricaDeRepositorio = new FabricaDeRepositorio()) {
+        try (var fabricaDeRepositorio = FabricaDeRepositorio.obterInstancia()) {
             var vendaRepositorio = fabricaDeRepositorio.criarVendaRepositorio();
             var cadastroVendaServico = new CadastroVendaServico(vendaRepositorio);
             Venda vendaCadastrada = cadastroVendaServico.cadastrar("José da Silva", new BigDecimal("12300.87"),
