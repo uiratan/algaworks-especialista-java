@@ -4,6 +4,8 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
+import com.algaworks.c34repository.comercial.repositorio.mysql.MySQLVendaRepositorio;
+
 public class FabricaDeRepositorio implements AutoCloseable {
 
     private final Connection conexao;
@@ -17,7 +19,7 @@ public class FabricaDeRepositorio implements AutoCloseable {
     }
 
     public VendaRepositorio criarVendaRepositorio() {
-        return new VendaRepositorio(conexao);
+        return new MySQLVendaRepositorio(conexao);
     }
 
     @Override
