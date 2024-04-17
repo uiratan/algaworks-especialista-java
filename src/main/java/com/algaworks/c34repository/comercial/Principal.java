@@ -14,9 +14,7 @@ public class Principal {
         try (var fabricaDeRepositorio = FabricaDeRepositorio.obterInstancia()) {
             var vendaRepositorio = fabricaDeRepositorio.criarVendaRepositorio();
             var cadastroVendaServico = new CadastroVendaServico(vendaRepositorio);
-            Venda vendaCadastrada = cadastroVendaServico.cadastrar("José da Silva", new BigDecimal("12300.87"),
-                    // LocalDate.parse("2023-04-19"));
-                    LocalDate.now());
+            Venda vendaCadastrada = cadastroVendaServico.cadastrar("José da Silva", new BigDecimal("12300.87"), LocalDate.now());
 
             System.out.println("Venda Cadastrada: " + vendaCadastrada);
             
